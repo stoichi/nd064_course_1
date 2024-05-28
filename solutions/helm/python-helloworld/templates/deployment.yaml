@@ -4,9 +4,9 @@ metadata:
   labels:
     app: python-helloworld
   name: python-helloworld
-  namespace: default
+  namespace: {{ .Values.namespace.name }} 
 spec:
-  replicas: 3
+  replicas: {{ .Values.replicaCount }} 
   selector:
     matchLabels:
       app: python-helloworld
@@ -21,10 +21,6 @@ spec:
         app: python-helloworld
     spec:
       containers:
-      - image: stoichi/python-helloworld:v1.1.0
-        imagePullPolicy: IfNotPresent
+      - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+        imagePullPolicy: IfNotPresent 
         name: python-helloworld
-        resources:
-          requests:
-            cpu: 50m
-            memory: 256Mi
