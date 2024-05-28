@@ -1,0 +1,15 @@
+
+FROM python:latest
+
+WORKDIR /usr/src/app
+
+# copy all the files from the current directory to the container working directory
+ADD . .
+
+RUN  pip install -r requirements.txt
+
+# expose the port 6111
+EXPOSE 6111
+
+# start the container
+CMD ["python", "./helloworld.py"]

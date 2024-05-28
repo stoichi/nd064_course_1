@@ -1,11 +1,26 @@
-## Docker commands used to build the application 
+## Docker commands used to build the application
 # TODO: insert the docker build command
+docker build -t=techtrends .
 
 ## Docker commands used to run the application
 # TODO: insert the docker run command
+docker run -p=7111:3111 techtrends
 
 ## Docker commands used to get the application logs
 # TODO: insert the docker logs command
+docker logs 1dc2f9740f46
 
 ## Logs from the container running the TechTrends application
-# TODO: paste logs from the Docker container 
+# TODO: paste logs from the Docker container
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+2024-05-28 14:45:41,055 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2024-05-28 14:45:41,055 - werkzeug - INFO -  * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+2024-05-28 14:45:57,484 - __main__ - INFO - Article Kubernetes v1.20 Release Notes retrieved!
+2024-05-28 14:45:57,494 - werkzeug - INFO - 172.17.0.1 - - [28/May/2024 14:45:57] "GET /3 HTTP/1.1" 200 -
+2024-05-28 14:45:57,516 - werkzeug - INFO - 172.17.0.1 - - [28/May/2024 14:45:57] "GET /static/css/main.css HTTP/1.1" 304 -
+2024-05-28 14:46:07,873 - werkzeug - INFO - 172.17.0.1 - - [28/May/2024 14:46:07] "GET /healthz HTTP/1.1" 200 -

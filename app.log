@@ -1,0 +1,7 @@
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.226.95.1:5000/ (Press CTRL+C to quit)
+DEBUG:__main__:2023-09-08 16:20:32.786363, status endpoint was reached
+INFO:werkzeug:10.226.95.1 - - [08/Sep/2023 16:20:32] "GET /status HTTP/1.1" 200 -
+DEBUG:__main__:2023-09-08 16:20:37.869667, hello endpoint was reached
+INFO:werkzeug:10.226.95.1 - - [08/Sep/2023 16:20:37] "GET / HTTP/1.1" 200 -
