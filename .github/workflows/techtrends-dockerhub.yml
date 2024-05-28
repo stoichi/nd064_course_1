@@ -30,4 +30,4 @@ jobs:
         context: ./project
         dockerfile: ./project/Dockerfile
         push: true
-        tags: techtrends:latest
+        tags: stoichi/techtrends:latest
