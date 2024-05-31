@@ -24,8 +24,8 @@ resources:
 
 containerPort: 3111
 
-livenessProbe path: /healthz
-readinessProbe path: /healthz
+livenessProbePath: /healthz
+readinessProbePath: /healthz
 
 configmap:
   data: "version: alpine"
